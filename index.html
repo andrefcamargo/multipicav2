@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<!-- Mito 1: Vacinas causam autismo -->
+
+<h1>Mitos e Verdades sobre CIÊNCIA</h1>
+<p>Vamos conhecer alguns mitos científicos comuns e entender, de forma simples, o que as evidências científicas mostram.</p>
+
+<div class="card">
+  <h2>Mito 1: Vacinas causam autismo</h2>
+  <p>Esse é um mito. Estudos científicos de grande escala não encontraram relação causal entre vacinas e autismo.</p>
+  <img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&w=300&q=80" alt="Profissional da saúde preparando uma vacina">
+  <!-- A classe btn-modal poderá ser usada futuramente pelo JavaScript para abrir o modal com mais informações. -->
+  <button class="btn-modal">Saiba mais</button>
+  <!-- A classe btn-like e o atributo data-likes poderão ser usados pelo JavaScript para controlar as curtidas. -->
+  <button class="btn-like" data-likes="0">❤️ Curtir (<span class="like-count">0</span>)</button>
+</div>
+
+<!-- Mito 2: O lado escuro da Lua não recebe luz solar -->
+
+<div class="card">
+  <h2>Mito 2: O lado escuro da Lua nunca recebe luz solar</h2>
+  <p>Esse é um mito. Todos os lados da Lua recebem luz solar em diferentes momentos, conforme ela orbita a Terra.</p>
+  <img src="https://tse2.mm.bing.net/th/id/OIP.OVceEBruJaJyeB7BgFhWeAAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Lua brilhando no céu noturno">
+  <!-- A classe btn-modal poderá ser usada futuramente pelo JavaScript para abrir o modal com mais informações. -->
+  <button class="btn-modal">Saiba mais</button>
+  <!-- A classe btn-like e o atributo data-likes poderão ser usados pelo JavaScript para controlar as curtidas. -->
+  <button class="btn-like" data-likes="0">❤️ Curtir (<span class="like-count">0</span>)</button>
+</div>
+
+<!--
+  Modal oculto:
+  O ID "modal" permitirá ao JavaScript localizar e controlar a janela.
+  A classe "modal" identifica o componente e "hidden" indica que ele começa oculto.
+-->
+
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <!-- A classe "close-btn" poderá ser usada pelo JavaScript para fechar o modal. -->
+    <span class="close-btn">&times;</span>
+    <!-- O ID "modal-title" receberá futuramente o título do mito selecionado. -->
+    <h3 id="modal-title"></h3>
+    <!-- O ID "modal-text" receberá futuramente a explicação detalhada do mito. -->
+    <p id="modal-text"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
